@@ -8,4 +8,5 @@ source $ZSH/oh-my-zsh.sh
 
 alias vim=nvim
 alias zshconfig="vim ~/.zshrc"
+alias fd=fdfind
 
