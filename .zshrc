@@ -8,5 +8,6 @@ source $ZSH/oh-my-zsh.sh
 
 alias vim=nvim
 alias zshconfig="vim ~/.zshrc"
+alias kittyconfig="vim ~/.config/kitty/kitty.conf"
 alias fd=fdfind
 
