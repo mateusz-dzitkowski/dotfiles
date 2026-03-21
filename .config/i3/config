@@ -192,7 +192,7 @@ bar {
 
 # MY CUSTOM THINGS HERE
 bindsym $mod+Return exec kitty
-bindsym $mod+d exec rofi -show run
+bindsym $mod+d exec dmenu_run
 bindsym $mod+Shift+e exec "i3-msg exit"
 
 gaps inner 8
