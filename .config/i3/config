@@ -195,8 +195,8 @@ bindsym $mod+Return exec kitty
 bindsym $mod+d exec rofi -show run
 bindsym $mod+Shift+e exec "i3-msg exit"
 
-gaps inner 8
-gaps outer 4
+gaps inner 4
+gaps outer 2
 
 default_border pixel 2
 hide_edge_borders smart
@@ -207,5 +207,6 @@ client.unfocused        #313244 #1e1e2e #a6adc8 #313244
 
 exec_always picom
 exec_always xsetroot -solid "#1e1e1e"
+exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
 exec $HOME/.config/polybar/launch.sh
 
