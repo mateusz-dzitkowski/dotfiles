@@ -6,12 +6,5 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-alias zshconfig="nvim ~/.zshrc"
-alias kittyconfig="nvim ~/.config/kitty/kitty.conf"
-alias fd=fdfind
+alias icat="kitty +kitten icat"
 
-# PATH
-export PATH="$HOME/.ghcup/bin:$PATH"
-
-
-[ -f "/home/mati-test/.ghcup/env" ] && . "/home/mati-test/.ghcup/env" # ghcup-env
