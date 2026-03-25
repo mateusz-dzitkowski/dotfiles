@@ -90,7 +90,7 @@ bindsym $mod+Shift+e exec "i3-msg exit"
 gaps inner 2
 gaps outer 2
 
-default_border pixel 4
+default_border pixel 0
 hide_edge_borders smart
 
 client.focused          #89b4fa #1e1e2e #cdd6f4 #89b4fa
