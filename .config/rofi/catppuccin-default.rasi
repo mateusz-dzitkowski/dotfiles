@@ -1,6 +1,3 @@
-// @import "catppuccin-latte"
-// @import "catppuccin-frappe"
-// @import "catppuccin-macchiato"
 @import "catppuccin-mocha"
 
 * {
@@ -11,19 +8,19 @@
   alternate-urgent-background: @lightbg;
   lightbg:                     @mantle;
   background-color:            transparent;
-  border-color:                @foreground;
+  border-color:                @background;
   normal-background:           @background;
   selected-urgent-background:  @red;
   alternate-active-background: @lightbg;
   spacing:                     2;
   alternate-normal-foreground: @foreground;
   urgent-background:           @background;
-  selected-normal-foreground:  @lightbg;
+  selected-normal-foreground:  @text;
   active-foreground:           @blue;
   background:                  @base;
   selected-active-background:  @blue;
   active-background:           @background;
-  selected-normal-background:  @lightfg;
+  selected-normal-background:  @surface1;
   alternate-normal-background: @lightbg;
   foreground:                  @text;
   selected-urgent-foreground:  @background;
@@ -96,20 +93,13 @@ mainbox {
     border:  0;
 }
 message {
-    padding:      1px ;
-    border-color: @separatorcolor;
-    border:       2px dash 0px 0px ;
+    border: 0;
 }
 textbox {
     text-color: @foreground;
 }
 listview {
-    padding:      2px 0px 0px ;
-    scrollbar:    true;
-    border-color: @separatorcolor;
-    spacing:      2px ;
-    fixed-height: 0;
-    border:       2px dash 0px 0px ;
+    border: 0;
 }
 scrollbar {
     width:        4px ;
