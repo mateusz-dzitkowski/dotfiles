@@ -4,6 +4,7 @@ return {
     opts = {
       ensure_installed = {
         "lua_ls",
+	"pyright",
       },
     },
   },
@@ -11,6 +12,7 @@ return {
     "neovim/nvim-lspconfig",
     config = function()
       vim.lsp.enable('lua_ls')
+      vim.lsp.enable('pyright')
     end
   },
 }
