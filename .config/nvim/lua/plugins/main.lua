@@ -46,7 +46,10 @@ return {
         never_show = {},
       },
       use_libuv_file_watcher = true,
-    }
+    },
+    window = {
+      width = 25,
+    },
   }
 },
 {
