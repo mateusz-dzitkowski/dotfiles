@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# wait for the NetworkManager to start
+nm-online -q
+
 # Terminate already running bar instances
 killall -q polybar
 # If all your bars have ipc enabled, you can also use
