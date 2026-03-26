@@ -8,3 +8,4 @@ source $ZSH/oh-my-zsh.sh
 
 alias icat="kitty +kitten icat"
 
+export PATH="$HOME/.local/bin:$PATH"
