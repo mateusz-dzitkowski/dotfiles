@@ -7,15 +7,3 @@
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
 
-vim.api.nvim_create_autocmd("TermClose", {
-  patterm = "*lazygit*",
-  callback = function()
-    vim.schedule(function()
-      vim.cmd("checktime")
-      if package.loaded["neo-tree.sources.git_status"] then
-        require("neo-tree.sources.git_status").refresh()
-      end
-    end
-    )
-  end
-})
