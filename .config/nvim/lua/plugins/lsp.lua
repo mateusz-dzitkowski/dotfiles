@@ -59,6 +59,9 @@ return {
         }),
       })
     end,
-  }
+  },
+  {
+    'stevearc/conform.nvim',
+  },
 }
 

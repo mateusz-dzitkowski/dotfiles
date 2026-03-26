@@ -15,3 +15,11 @@ vim.diagnostic.config({
   update_in_insert = true,
 })
 
+require("conform").setup({
+    formatters_by_ft = {
+        python = { "ruff", "black" },
+        go = { "gofmt" },
+        javascript = { "prettier" },
+    },
+})
+
