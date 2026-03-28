@@ -10,3 +10,7 @@ alias icat="kitty +kitten icat"
 
 export PATH="$HOME/.local/bin:$PATH"
 
+# HASKELL
+export PATH="$HOME/.ghcup/bin:$PATH"
+export PATH="$HOME/.cabal/bin:$PATH"
+

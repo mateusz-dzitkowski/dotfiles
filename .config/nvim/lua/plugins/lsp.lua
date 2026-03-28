@@ -6,6 +6,7 @@ return {
         "lua_ls",
 	"pyright",
 	"gopls",
+	"hls",
       },
     },
   },
@@ -27,9 +28,14 @@ return {
 	filetypes = { "go" },
       })
 
+      vim.lsp.config("hls", {
+        filetypes = { "haskell" },
+      })
+
       vim.lsp.enable('lua_ls')
       vim.lsp.enable('pyright')
       vim.lsp.enable("gopls")
+      vim.lsp.enable("hls")
     end
   },
   {
