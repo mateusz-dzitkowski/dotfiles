@@ -24,7 +24,7 @@ require("conform").setup({
 				return { "isort", "black" }
 			end
 		end,
-		go = { "gofmt" },
+		go = { "gofmt", "goimports" },
 		javascript = { "prettier" },
 	},
 	format_on_save = {

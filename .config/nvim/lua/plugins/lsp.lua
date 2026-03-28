@@ -5,6 +5,7 @@ return {
       ensure_installed = {
         "lua_ls",
 	"ruff",
+	"gopls",
       },
     },
   },
@@ -22,8 +23,13 @@ return {
         },
       })
 
+      vim.lsp.config("gopls", {
+	filetypes = { "go" },
+      })
+
       vim.lsp.enable('lua_ls')
       vim.lsp.enable('ruff')
+      vim.lsp.enable("gopls")
     end
   },
   {
