@@ -108,4 +108,5 @@ exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
 exec_always --no-startup-id unclutter --timeout 1 --jitter 0
 exec $HOME/.config/polybar/launch.sh
 
-focus_on_window_activation focus
+focus_on_window_activation none
+focus_follows_mouse no
