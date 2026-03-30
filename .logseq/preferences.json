@@ -1,7 +1,7 @@
 {
   "theme": null,
   "themes": {
-    "mode": "light",
+    "mode": "dark",
     "light": {
       "name": "Default Light Theme",
       "url": null,
@@ -11,7 +11,14 @@
       "group-first": true,
       "group-desc": "light themes"
     },
-    "dark": null
+    "dark": {
+      "name": "Catppuccin Mocha",
+      "url": "file:///Users/mateusz.dzitkowski/.logseq/plugins/logseq-catppuccin/ctp-mocha.css",
+      "description": "Catppuccin Mocha",
+      "mode": "dark",
+      "pid": "logseq-catppuccin",
+      "selected": false
+    }
   },
   "externals": []
 }
