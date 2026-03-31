@@ -17,3 +17,10 @@ export PATH="$HOME/.cabal/bin:$PATH"
 # GO
 export PATH="$HOME/go/bin:$PATH"
 
+
+envsource() {
+    set -a
+    source "${1:-.env}"
+    set +a
+}
+
