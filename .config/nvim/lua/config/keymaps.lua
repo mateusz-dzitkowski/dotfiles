@@ -14,3 +14,6 @@ vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", { desc = "Toggle Neotree
 vim.keymap.set("n", "<leader>o", ":Neotree focus<CR>", { desc = "Focus on Neotree" })
 
 vim.keymap.set("n", "J", vim.diagnostic.open_float, { desc = "Open diagnostics" })
+
+local gitsigns = require("gitsigns")
+vim.keymap.set("n", "<leader>hr", gitsigns.reset_hunk, { desc = "Reset hunk" })
