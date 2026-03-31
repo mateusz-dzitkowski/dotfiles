@@ -33,7 +33,7 @@ return {
             "MunifTanjim/nui.nvim",
             "nvim-tree/nvim-web-devicons", -- optional, but recommended
         },
-        lazy = false,              -- neo-tree will lazily load itself
+        lazy = false,                      -- neo-tree will lazily load itself
         opts = {
             filesystem = {
                 filtered_items = {
@@ -74,11 +74,21 @@ return {
         }
     },
     {
+        "nvim-treesitter/nvim-treesitter",
+        branch = "master",
+        lazy = false,
+        build = ":TSUpdate",
+        opts = {
+            indent = { enable = true },
+            highlight = { enable = true },
+            folds = { enable = true },
+            ensure_installed = { "diff", "json", "lua", "markdown", "python", "toml", "go" },
+            auto_install = true,
+        },
+    },
+    {
         "catppuccin/nvim",
         name = "catppuccin",
         priority = 1000,
-        config = function()
-            vim.cmd.colorscheme "catppuccin-nvim"
-        end,
     },
 }
