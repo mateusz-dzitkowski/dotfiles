@@ -9,13 +9,16 @@
 
 vim.api.nvim_create_autocmd("LspAttach", {
     group = vim.api.nvim_create_augroup("UserLspConfig", {}),
-    callback = function(ev)
+    callback = function(args)
+        local buffer = args.buf
         local telescope = require("telescope.builtin")
-        local opts = { buffer = ev.buf }
-        vim.keymap.set("n", "gd", telescope.lsp_definitions, opts)
-        vim.keymap.set("n", "gr", telescope.lsp_references, opts)
-        vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
-        vim.keymap.set("n", "<space>rn", vim.lsp.buf.rename, opts)
-        vim.keymap.set({ "n", "v" }, "<space>ca", vim.lsp.buf.code_action, opts)
+        vim.keymap.set("n", "ga", vim.lsp.buf.code_action, { buffer = buffer, desc = "Code Action" })
+        vim.keymap.set("n", "gi", telescope.lsp_implementations, { buffer = buffer, desc = "Goto implementations" })
+        vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { buffer = buffer, desc = "Rename" })
+        vim.keymap.set("n", "gr", telescope.lsp_references, { buffer = buffer, desc = "Goto references" })
+        vim.keymap.set("n", "gt", telescope.lsp_type_definitions, { buffer = buffer, desc = "Goto type definitions" })
+        vim.keymap.set("n", "gd", telescope.lsp_definitions, { buffer = buffer, desc = "Goto definitions" })
+
+        vim.keymap.set("n", "K", vim.lsp.buf.hover, { buffer = buffer, desc = "Show hover menu" })
     end,
 })
