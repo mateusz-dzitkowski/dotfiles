@@ -14,3 +14,6 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.ghcup/bin:$PATH"
 export PATH="$HOME/.cabal/bin:$PATH"
 
+# GO
+export PATH="$HOME/go/bin:$PATH"
+
