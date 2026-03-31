@@ -82,7 +82,6 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 
-# MY CUSTOM THINGS HERE
 bindsym $mod+Return exec kitty
 bindsym $mod+d exec rofi -show run
 bindsym $mod+Shift+e exec "i3-msg exit"
