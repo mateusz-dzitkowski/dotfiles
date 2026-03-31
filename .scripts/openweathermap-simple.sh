@@ -37,6 +37,7 @@ if [ -n "$weather" ]; then
     weather_temp=$(echo "$weather" | jq ".main.temp" | cut -d "." -f 1)
     weather_temp_feels_like=$(echo "$weather" | jq ".main.feels_like" | cut -d "." -f 1)
     weather_icon=$(echo "$weather" | jq -r ".weather[0].icon")
+    weather_pressure=$(echo "$weather" | jq -r ".main.pressure")
 
-    echo "$(get_icon "$weather_icon")" "$weather_temp$SYMBOL" "($weather_temp_feels_like$SYMBOL)"
+    echo "$(get_icon "$weather_icon")" "$weather_temp$SYMBOL" "($weather_temp_feels_like$SYMBOL)" "${weather_pressure}hPa"
 fi
