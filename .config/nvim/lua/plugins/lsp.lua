@@ -13,6 +13,16 @@ return {
     {
         "neovim/nvim-lspconfig",
         config = function()
+            vim.lsp.config("lua_ls", {
+                settings = {
+                    Lua = {
+                        diagnostics = {
+                            globals = { "vim" },
+                        },
+                    },
+                },
+            })
+
             vim.lsp.config('pyright', {
                 filetypes = { "python" },
                 settings = {
@@ -41,11 +51,11 @@ return {
     {
         "hrsh7th/nvim-cmp",
         dependencies = {
-            "hrsh7th/cmp-nvim-lsp", -- LSP source
-            "hrsh7th/cmp-buffer", -- buffer completions
-            "hrsh7th/cmp-path",   -- filesystem paths
+            "hrsh7th/cmp-nvim-lsp",     -- LSP source
+            "hrsh7th/cmp-buffer",       -- buffer completions
+            "hrsh7th/cmp-path",         -- filesystem paths
             "saadparwaiz1/cmp_luasnip", -- snippets
-            "L3MON4D3/LuaSnip",   -- snippet engine
+            "L3MON4D3/LuaSnip",         -- snippet engine
         },
         config = function()
             local cmp = require("cmp")
