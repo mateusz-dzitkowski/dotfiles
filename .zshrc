@@ -6,6 +6,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source "$ZSH/oh-my-zsh.sh"
 source "$HOME/.scripts/z.sh"
+[ -e "$HOME/.zshrc-bonus.zsh" ] && source "$HOME/.zshrc-bonus.zsh"
 
 alias icat="kitty +kitten icat"
 
