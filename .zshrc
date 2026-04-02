@@ -4,7 +4,8 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 HIST_STAMPS="yyyy-mm-dd"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
-source $ZSH/oh-my-zsh.sh
+source "$ZSH/oh-my-zsh.sh"
+source "$HOME/.scripts/z.sh"
 
 alias icat="kitty +kitten icat"
 
