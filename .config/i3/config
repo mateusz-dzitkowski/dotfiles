@@ -92,7 +92,6 @@ bindsym $mod+d exec rofi -show run
 bindsym $mod+Shift+e exec "i3-msg exit"
 bindsym $mod+r exec pgrep -x redshift > /dev/null && pkill redshift > /dev/null || redshift &
 
-gaps inner 2
 gaps outer 2
 
 default_border pixel 0
