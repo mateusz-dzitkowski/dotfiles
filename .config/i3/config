@@ -111,7 +111,7 @@ exec_always --no-startup-id picom
 exec_always --no-startup-id xsetroot -solid "#1e1e1e"
 exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
 exec_always --no-startup-id unclutter --timeout 1 --jitter 0
-exec $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 focus_on_window_activation none
 focus_follows_mouse no
