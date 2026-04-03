@@ -5,7 +5,6 @@ HIST_STAMPS="yyyy-mm-dd"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source "$ZSH/oh-my-zsh.sh"
-source "$HOME/.scripts/z.sh"
 [ -e "$HOME/.zshrc-bonus.zsh" ] && source "$HOME/.zshrc-bonus.zsh"
 
 alias icat="kitty +kitten icat"
@@ -25,4 +24,6 @@ envsource() {
     source "${1:-.env}"
     set +a
 }
+
+eval "$(zoxide init zsh)"
 
