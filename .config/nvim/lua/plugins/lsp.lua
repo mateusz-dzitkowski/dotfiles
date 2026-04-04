@@ -1,6 +1,6 @@
 return {
     {
-        'mason-org/mason.nvim',
+        "mason-org/mason.nvim",
         opts = {
             ensure_installed = {
                 "lua_ls",
@@ -29,7 +29,7 @@ return {
                 },
             })
 
-            vim.lsp.config('pyright', {
+            vim.lsp.config("pyright", {
                 filetypes = { "python" },
                 settings = {
                     python = {
@@ -48,8 +48,8 @@ return {
                 filetypes = { "haskell" },
             })
 
-            vim.lsp.enable('lua_ls')
-            vim.lsp.enable('pyright')
+            vim.lsp.enable("lua_ls")
+            vim.lsp.enable("pyright")
             vim.lsp.enable("gopls")
             vim.lsp.enable("hls")
         end
@@ -90,6 +90,6 @@ return {
         end,
     },
     {
-        'stevearc/conform.nvim',
+        "stevearc/conform.nvim",
     },
 }

@@ -1,10 +1,10 @@
 return {
     {
-        'nvim-telescope/telescope.nvim',
-        version = '*',
+        "nvim-telescope/telescope.nvim",
+        version = "*",
         dependencies = {
-            'nvim-lua/plenary.nvim',
-            { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
+            "nvim-lua/plenary.nvim",
+            { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
         },
     },
     {
@@ -42,7 +42,7 @@ return {
                     hide_dotfiles = false,
                     hide_gitignored = true,
                     hide_by_name = {
-                        '.git',
+                        ".git",
                     },
                     never_show = {},
                 },
@@ -67,7 +67,7 @@ return {
         dependencies = {
             "nvim-lua/plenary.nvim",
         },
-        -- setting the keybinding for LazyGit with 'keys' is recommended in
+        -- setting the keybinding for LazyGit with "keys" is recommended in
         -- order to load the plugin when the command is run for the first time
         keys = {
             { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
