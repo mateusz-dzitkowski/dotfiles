@@ -94,6 +94,12 @@ return {
         lazy = false,
     },
     {
+       "m4xshen/hardtime.nvim",
+       lazy = false,
+       dependencies = { "MunifTanjim/nui.nvim" },
+       opts = {},
+    },
+    {
         "catppuccin/nvim",
         name = "catppuccin",
         priority = 1000,
