@@ -1,11 +1,11 @@
-return    {
-        "mason-org/mason.nvim",
-        opts = {
-            ensure_installed = {
-                "lua_ls",
-                "pyright",
-                "gopls",
-                "hls",
-            },
+return {
+    "mason-org/mason.nvim",
+    opts = {
+        ensure_installed = {
+            "lua_ls",
+            "pyright",
+            "gopls",
+            "hls",
         },
-    }
+    },
+}
