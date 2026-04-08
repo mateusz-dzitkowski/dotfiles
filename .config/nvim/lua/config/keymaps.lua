@@ -4,6 +4,7 @@ vim.keymap.del("n", "grn")
 vim.keymap.del("n", "gra")
 vim.keymap.del("n", "grr")
 vim.keymap.del("n", "grt")
+vim.keymap.del("n", "grx")
 
 -- set some keymaps
 local builtin = require("telescope.builtin")
