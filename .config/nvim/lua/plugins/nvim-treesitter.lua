@@ -9,8 +9,15 @@ return {
                 vim.bo.indentexpr = "v:lua.require('nvim-treesitter').indentexpr()"
             end
         })
-        
-        local ensure_installed = {"go", "gosum", "gomod", "python"}
+
+        local ensure_installed = {
+            "go",
+            "gosum",
+            "gomod",
+            "python",
+            "terraform",
+            "hcl",
+        }
         local already_installed = require("nvim-treesitter.config").get_installed()
         local parsers_to_install = vim.iter(ensure_installed)
             :filter(function(parser)
