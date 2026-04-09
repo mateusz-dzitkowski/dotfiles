@@ -9,21 +9,26 @@ source "$ZSH/oh-my-zsh.sh"
 
 alias icat="kitty +kitten icat"
 
-export PATH="$HOME/.local/bin:$PATH"
+# ENV ENV ENV ENV
+export PAGER=less
+export LESS="-iMSx4 -FX"
+export EDITOR=nvim
 
+# PATH PATH PATH
+export PATH="$HOME/.local/bin:$PATH"
 # HASKELL
 export PATH="$HOME/.ghcup/bin:$PATH"
 export PATH="$HOME/.cabal/bin:$PATH"
-
 # GO
 export PATH="$HOME/go/bin:$PATH"
 
-
+# FUNCTIONS FUNCTIONS FUNCTIONS
 envsource() {
     set -a
     source "${1:-.env}"
     set +a
 }
 
+# STINKY ZOXIDE HAS TO BE TURNED OFF AT THE END?
 eval "$(zoxide init zsh)"
 
