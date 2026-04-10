@@ -12,16 +12,6 @@ vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Telescope find f
 vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Telescope live grep" })
 
 vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", { desc = "Toggle Neotree" })
-local function toggle_neotree_focus()
-    local ft = vim.bo[vim.api.nvim_win_get_buf(vim.api.nvim_get_current_win())].filetype
-    if ft == "neo-tree" then
-        vim.cmd("Neotree close")
-        vim.cmd("wincmd p")
-    else
-        vim.cmd("Neotree focus")
-    end
-end
-vim.keymap.set("n", "<leader>o", toggle_neotree_focus, { desc = "Focus on Neotree" })
 
 vim.keymap.set("n", "J", vim.diagnostic.open_float, { desc = "Open diagnostics" })
 

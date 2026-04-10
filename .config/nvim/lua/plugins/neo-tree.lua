@@ -10,7 +10,10 @@ return {
     ---@module "neo-tree"
     ---@type neotree.Config
     opts = {
+        close_if_last_window = true,
         filesystem = {
+            follow_current_file = { enabled = true },
+            hijack_netrw_behavior = "open_current",
             filtered_items = {
                 visible = false,
                 hide_dotfiles = false,
@@ -23,8 +26,16 @@ return {
             scan_mode = "deep",
             async_directory_scan = "never",
         },
+        event_handlers = {
+            {
+                event = "file_opened",
+                handler = function(_)
+                    require("neo-tree.command").execute({ action = "close" })
+                end,
+            }
+        },
         window = {
-            width = 25,
+            width = 40,
         },
     }
 }
