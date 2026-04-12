@@ -9,17 +9,15 @@ vim.keymap.del("n", "grt")
 vim.keymap.del("n", "grx")
 
 -- set some keymaps
-local builtin = require("telescope.builtin")
-map("n", "<leader>ff", builtin.find_files, { desc = "Telescope find files" })
-map("n", "<leader>fg", builtin.live_grep, { desc = "Telescope live grep" })
+map("n", "<leader>ff", require("telescope.builtin").find_files, { desc = "Telescope find files" })
+map("n", "<leader>fg", require("telescope.builtin").live_grep, { desc = "Telescope live grep" })
 map("n", "J", vim.diagnostic.open_float, { desc = "Open diagnostics" })
 map("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 map("n", "<leader>y", '"+y', { desc = "Yank to clipboard" })
 map("n", "<leader>p", '"+p', { desc = "Pase from clipboard" })
 
-local gitsigns = require("gitsigns")
-map("n", "<leader>hr", gitsigns.reset_hunk, { desc = "Reset hunk" })
+map("n", "<leader>hr", require("gitsigns").reset_hunk, { desc = "Reset hunk" })
 
 -- incremental selecting
 map({ "x", "o" }, "<A-o>", function()
