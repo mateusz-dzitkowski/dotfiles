@@ -12,6 +12,7 @@ return {
             "hls",
             "terraformls",
             "clangd",
+            "marksman",
         },
     },
 }

@@ -23,16 +23,3 @@ vim.api.nvim_create_autocmd("LspAttach", {
     end,
 })
 
-vim.api.nvim_create_autocmd("BufEnter", {
-    pattern = "**/*.md",
-    callback = function()
-        vim.cmd("Markview splitOpen")
-    end,
-})
-
-vim.api.nvim_create_autocmd("BufLeave", {
-    pattern = "**/*.md",
-    callback = function()
-        vim.cmd("Markview splitClose")
-    end,
-})
