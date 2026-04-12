@@ -12,10 +12,8 @@ vim.keymap.del("n", "grx")
 local builtin = require("telescope.builtin")
 map("n", "<leader>ff", builtin.find_files, { desc = "Telescope find files" })
 map("n", "<leader>fg", builtin.live_grep, { desc = "Telescope live grep" })
-
-map("n", "<leader>e", ":Neotree toggle<CR>", { desc = "Toggle Neotree" })
-
 map("n", "J", vim.diagnostic.open_float, { desc = "Open diagnostics" })
+map("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 local gitsigns = require("gitsigns")
 map("n", "<leader>hr", gitsigns.reset_hunk, { desc = "Reset hunk" })
