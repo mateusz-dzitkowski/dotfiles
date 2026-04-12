@@ -11,6 +11,7 @@ return {
             "gopls",
             "hls",
             "terraformls",
+            "clangd",
         },
     },
 }
