@@ -15,6 +15,9 @@ map("n", "<leader>fg", builtin.live_grep, { desc = "Telescope live grep" })
 map("n", "J", vim.diagnostic.open_float, { desc = "Open diagnostics" })
 map("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
+map("n", "<leader>y", '"+y', { desc = "Yank to clipboard" })
+map("n", "<leader>p", '"+p', { desc = "Pase from clipboard" })
+
 local gitsigns = require("gitsigns")
 map("n", "<leader>hr", gitsigns.reset_hunk, { desc = "Reset hunk" })
 
