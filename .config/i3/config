@@ -106,8 +106,8 @@ exec_always --no-startup-id xset r rate 300 40
 # keyboard
 exec_always --no-startup-id setxkbmap -layout pl,us -option caps:escape
 # mouse thingy
-exec_always --no-startup-id xinput set-prop 'ELAN0300:00 04F3:3206 Mouse' 'libinput Accel Profile Enabled' 0,1
-exec_always --no-startup-id xinput set-prop 'ELAN0300:00 04F3:3206 Mouse' 'libinput Accel Speed' 0.2
+exec_always --no-startup-id xinput set-prop 'SteelSeries SteelSeries Rival 3' 'libinput Accel Profile Enabled' 0 1 0
+exec_always --no-startup-id xinput set-prop 'SteelSeries SteelSeries Rival 3' 'libinput Accel Speed' 0.2
 
 # startup scripts
 exec_always --no-startup-id picom
