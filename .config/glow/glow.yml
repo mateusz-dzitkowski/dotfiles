@@ -1,0 +1,7 @@
+mouse: false
+pager: true
+width: 100
+all: false
+showLineNumbers: true
+preserveNewLines: true
+
