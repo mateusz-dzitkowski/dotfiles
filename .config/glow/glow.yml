@@ -1,5 +1,5 @@
 mouse: false
-pager: true
+tui: true
 width: 100
 all: false
 showLineNumbers: true
