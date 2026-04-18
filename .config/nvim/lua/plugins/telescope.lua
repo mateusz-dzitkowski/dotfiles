@@ -22,6 +22,14 @@ return {
                     end,
                 },
             },
+            layout_config = {
+                preview_cutoff = 1, -- always display the preview
+                horizontal = {
+                    width = { padding = 0 },
+                    height = { padding = 0 },
+                    preview_width = 0.6,
+                },
+            },
         },
         pickers = {
             find_files = {
