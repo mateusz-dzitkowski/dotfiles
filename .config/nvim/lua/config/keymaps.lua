@@ -8,6 +8,12 @@ vim.keymap.del("n", "grr")
 vim.keymap.del("n", "grt")
 vim.keymap.del("n", "grx")
 
+-- make vertical movement center the cursor on screen
+map("n", "<C-d>", "<C-d>zz")
+map("n", "<C-u>", "<C-u>zz")
+map("n", "<C-f>", "<C-f>zz")
+map("n", "<C-b>", "<C-b>zz")
+
 -- set some keymaps
 map("n", "<leader>ff", require("telescope.builtin").find_files, { desc = "Telescope find files" })
 map("n", "<leader>fg", require("telescope.builtin").live_grep, { desc = "Telescope live grep" })
