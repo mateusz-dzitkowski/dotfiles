@@ -17,6 +17,7 @@ return {
                         if entry and entry.lnum then
                             vim.schedule(function()
                                 vim.api.nvim_win_set_cursor(0, { entry.lnum, (entry.col or 1) - 1 })
+                                vim.cmd("normal! zz")
                             end)
                         end
                     end,
