@@ -8,5 +8,6 @@ return {
         sections = {
             lualine_x = { "lsp_status" },
         },
+        extensions = { "oil" },
     },
 }
