@@ -2,6 +2,6 @@ mouse: false
 tui: true
 width: 100
 all: false
-showLineNumbers: true
+showLineNumbers: false
 preserveNewLines: true
 
