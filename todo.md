@@ -1,2 +1,2 @@
-- [ ] screen keeps getting dark after some time
-
+- [ ] add GPU usage percent to the polybar
+- [ ] add temperature of CPU and GPU to polybar?
