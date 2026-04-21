@@ -101,12 +101,10 @@ client.focused_inactive #585b70 #1e1e2e #bac2de #585b70
 client.unfocused        #313244 #1e1e2e #a6adc8 #313244
 
 # x config thingy
-exec_always --no-startup-id xset s off
-exec_always --no-startup-id xset dpms 0 0 0
-exec_always --no-startup-id xset s noblank
-exec_always --no-startup-id xset r rate 300 40
+exec_always xset s off
 # keyboard
-exec_always --no-startup-id setxkbmap -layout pl,us -option caps:escape
+exec_always xset r rate 300 40
+exec_always setxkbmap -layout pl,us -option caps:escape
 # mouse thingy
 exec_always --no-startup-id xinput set-prop 'SteelSeries SteelSeries Rival 3' 'libinput Accel Profile Enabled' 0 1 0
 exec_always --no-startup-id xinput set-prop 'SteelSeries SteelSeries Rival 3' 'libinput Accel Speed' 0.2
