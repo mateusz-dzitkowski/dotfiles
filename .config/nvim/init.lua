@@ -15,4 +15,4 @@ vim.diagnostic.config({
     update_in_insert = true,
 })
 
-vim.cmd.colorscheme "catppuccin-nvim"
+vim.cmd.colorscheme "catppuccin-mocha"
