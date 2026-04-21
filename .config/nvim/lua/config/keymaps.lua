@@ -13,6 +13,8 @@ map("n", "<C-d>", "<C-d>zz")
 map("n", "<C-u>", "<C-u>zz")
 map("n", "<C-f>", "<C-f>zz")
 map("n", "<C-b>", "<C-b>zz")
+map("n", "<C-o>", "<C-o>zz")
+map("n", "<C-i>", "<C-i>zz")
 
 -- set some keymaps
 map("n", "<leader>ff", require("telescope.builtin").find_files, { desc = "Telescope find files" })
