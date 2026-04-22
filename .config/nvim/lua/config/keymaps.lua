@@ -16,6 +16,12 @@ map("n", "<C-b>", "<C-b>zz")
 map("n", "<C-o>", "<C-o>zz")
 map("n", "<C-i>", "<C-i>zz")
 
+-- tabs
+map("n", "<leader>t", ":tabe<CR>")
+map("n", "<leader>1", "1gt")
+map("n", "<leader>2", "2gt")
+map("n", "<leader>3", "3gt")
+
 -- set some keymaps
 map("n", "<leader>ff", require("telescope.builtin").find_files, { desc = "Telescope find files" })
 map("n", "<leader>fg", require("telescope.builtin").live_grep, { desc = "Telescope live grep" })
