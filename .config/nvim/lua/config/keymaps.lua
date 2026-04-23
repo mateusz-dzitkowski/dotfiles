@@ -23,8 +23,11 @@ map("n", "<leader>2", "2gt")
 map("n", "<leader>3", "3gt")
 
 -- set some keymaps
-map("n", "<leader>ff", require("telescope.builtin").find_files, { desc = "Telescope find files" })
-map("n", "<leader>fg", require("telescope.builtin").live_grep, { desc = "Telescope live grep" })
+local ts = require("telescope.builtin")
+map("n", "<leader>ff", ts.find_files, { desc = "Telescope find files" })
+map("n", "<leader>fg", ts.live_grep, { desc = "Telescope live grep" })
+map("n", "<leader>fb", ts.buffers, { desc = "Telescope buffers" })
+map("n", "<leader>fh", ts.help_tags, { desc = "Telescope help tags" })
 map("n", "J", vim.diagnostic.open_float, { desc = "Open diagnostics" })
 map("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
