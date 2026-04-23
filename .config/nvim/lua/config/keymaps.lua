@@ -28,10 +28,6 @@ map("n", "<leader>fg", require("telescope.builtin").live_grep, { desc = "Telesco
 map("n", "J", vim.diagnostic.open_float, { desc = "Open diagnostics" })
 map("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
-map("n", "<leader>y", '"+y', { desc = "Yank to clipboard" })
-map("n", "<leader>P", '"+P', { desc = "Paste from clipboard" })
-map("n", "<leader>p", '"+p', { desc = "Paste from clipboard" })
-
 map("n", "<leader>hr", require("gitsigns").reset_hunk, { desc = "Reset hunk" })
 
 -- incremental selecting
