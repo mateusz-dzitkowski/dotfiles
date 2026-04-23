@@ -1,4 +1,5 @@
 vim.g.mapleader = " "
+vim.g.lazygit_floating_window_scaling_factor = 1
 
 require("config.lazy")
 require("config.autocmds")
