@@ -22,6 +22,11 @@ map("n", "<leader>1", "1gt")
 map("n", "<leader>2", "2gt")
 map("n", "<leader>3", "3gt")
 
+-- clipboard
+map({ "n", "x" }, "<leader>y", '"+y')
+map("n", "<leader>p", '"+p')
+map("n", "<leader>P", '"+k')
+
 -- set some keymaps
 local ts = require("telescope.builtin")
 map("n", "<leader>ff", ts.find_files, { desc = "Telescope find files" })

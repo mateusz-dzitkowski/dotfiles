@@ -17,4 +17,3 @@ vim.opt.smartcase = true
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
-vim.opt.clipboard = "unnamedplus"
