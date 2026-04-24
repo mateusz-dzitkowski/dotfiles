@@ -9,6 +9,7 @@ source "$ZSH/oh-my-zsh.sh"
 
 alias icat="kitten icat"
 alias ssh="kitten ssh"
+alias lg=lazygit
 
 # ENV ENV ENV ENV
 export PAGER=less
