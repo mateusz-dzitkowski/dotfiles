@@ -7,7 +7,8 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 source "$ZSH/oh-my-zsh.sh"
 [ -e "$HOME/.zshrc-bonus.zsh" ] && source "$HOME/.zshrc-bonus.zsh"
 
-alias icat="kitty +kitten icat"
+alias icat="kitten icat"
+alias ssh="kitten ssh"
 
 # ENV ENV ENV ENV
 export PAGER=less
