@@ -25,7 +25,7 @@ map("n", "<leader>3", "3gt")
 -- clipboard
 map({ "n", "x" }, "<leader>y", '"+y')
 map("n", "<leader>p", '"+p')
-map("n", "<leader>P", '"+k')
+map("n", "<leader>P", '"+P')
 
 -- set some keymaps
 local ts = require("telescope.builtin")
