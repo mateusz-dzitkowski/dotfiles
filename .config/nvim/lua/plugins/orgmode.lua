@@ -26,7 +26,7 @@ return {
                                         description = "Daily ticket entry",
                                         template = [=[
 * TODO [[id:%^{Ticket ID}][%^{Description}]]
-  SCHEDULED: <%<%Y-%m-%d>>
+SCHEDULED: <%<%Y-%m-%d>>
 ]=],
                                         target = base_dir .. "journal/%<%Y-%m-%d>.org",
                                 },
@@ -34,7 +34,7 @@ return {
                                         description = "Daily note entry",
                                         template = [=[
 * TODO %^{Description}
-  SCHEDULED: <%<%Y-%m-%d>>
+SCHEDULED: <%<%Y-%m-%d>>
 ]=],
                                         target = base_dir .. "journal/%<%Y-%m-%d>.org",
                                 },
