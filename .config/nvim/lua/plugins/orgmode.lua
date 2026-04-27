@@ -31,7 +31,7 @@ return {
                                 },
                                 r = {
                                         description = "Reminder",
-                                        template = "* TODO %?\n  SCHEUDLED: %^t",
+                                        template = "* TODO %?\n  SCHEDULED: %^t",
                                 },
                         },
                         ui = {
