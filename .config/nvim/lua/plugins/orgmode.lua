@@ -25,7 +25,7 @@ return {
                                         description = "Daily task",
                                         template = [=[
 * TODO %?
-  SCHEDULED: <%<%Y-%m-%d>>
+  SCHEDULED: %t
 ]=],
                                         target = base_dir .. "journal/%<%Y-%m-%d>.org",
                                 },
