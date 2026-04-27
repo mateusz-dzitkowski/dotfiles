@@ -21,33 +21,18 @@ return {
                         org_log_done = false,
 
                         org_capture_templates = {
-                                d = "Daily entry",
-                                dt = {
-                                        description = "Daily ticket entry",
-                                        template = [=[
-* TODO [[id:%^{Ticket ID}][%^{Description}]]
-  SCHEDULED: <%<%Y-%m-%d>>
-]=],
-                                        target = base_dir .. "journal/%<%Y-%m-%d>.org",
-                                },
-                                dn = {
-                                        description = "Daily note entry",
-                                        template = [=[
-* TODO %^{Description}
-  SCHEDULED: <%<%Y-%m-%d>>
-]=],
-                                        target = base_dir .. "journal/%<%Y-%m-%d>.org",
-                                },
                                 t = {
-                                        description = "Ticket entry",
-                                        template = [[
-* %^{Description}
-:PROPERTIES:
-:ID: %^{Ticket ID}
-:END:
-]],
-                                        target = base_dir .. "tickets/%^{Ticket ID}.org",
-                                }
+                                        description = "Daily task",
+                                        template = [=[
+* TODO %?
+  SCHEDULED: <%<%Y-%m-%d>>
+]=],
+                                        target = base_dir .. "journal/%<%Y-%m-%d>.org",
+                                },
+                                r = {
+                                        description = "Reminder",
+                                        template = "* TODO %?\n  SCHEUDLED: %^t",
+                                },
                         },
                         ui = {
                                 menu = {
