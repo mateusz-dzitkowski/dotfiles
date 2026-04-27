@@ -26,7 +26,7 @@ return {
                                         description = "Daily ticket entry",
                                         template = [=[
 * TODO [[id:%^{Ticket ID}][%^{Description}]]
-SCHEDULED: <%<%Y-%m-%d>>
+  SCHEDULED: <%<%Y-%m-%d>>
 ]=],
                                         target = base_dir .. "journal/%<%Y-%m-%d>.org",
                                 },
@@ -34,7 +34,7 @@ SCHEDULED: <%<%Y-%m-%d>>
                                         description = "Daily note entry",
                                         template = [=[
 * TODO %^{Description}
-SCHEDULED: <%<%Y-%m-%d>>
+  SCHEDULED: <%<%Y-%m-%d>>
 ]=],
                                         target = base_dir .. "journal/%<%Y-%m-%d>.org",
                                 },
@@ -57,6 +57,16 @@ SCHEDULED: <%<%Y-%m-%d>>
                                 },
                         },
                 })
+
+                local events = require("orgmode.events")
+                events.listen(events.event.TodoChanged, function(event)
+                        local todo = event.headline:get_todo()
+                        if todo == "IN_PROGRESS" then
+                                event.headline:clock_in()
+                        else
+                                event.headline:clock_out()
+                        end
+                end)
 
                 -- Experimental LSP support
                 vim.lsp.enable("org")
