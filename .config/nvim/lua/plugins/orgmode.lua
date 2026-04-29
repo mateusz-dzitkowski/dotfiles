@@ -4,11 +4,12 @@ return {
         ft = { "org" },
         dependencies = { "danilshvalov/org-modern.nvim" },
         config = function()
+                local orgmode = require("orgmode")
                 local menu = require("org-modern.menu")
                 local base_dir = "~/stuff/notes/"
 
                 -- Setup orgmode
-                require("orgmode").setup({
+                orgmode.setup({
                         org_agenda_files = base_dir .. "**/*",
                         org_default_notes_file = base_dir .. "refile.org",
                         org_startup_folded = "showeverything",
@@ -42,6 +43,11 @@ return {
                                 },
                         },
                 })
+
+                -- make it possible to see the newly-created files in agenda mode, e.g. the daily journal
+                orgmode.capture.on_post_refile = function(self)
+                        self.files:load(true)
+                end
 
                 local events = require("orgmode.events")
                 events.listen(events.event.TodoChanged, function(event)
