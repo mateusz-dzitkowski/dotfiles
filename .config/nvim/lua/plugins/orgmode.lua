@@ -24,10 +24,7 @@ return {
                         org_capture_templates = {
                                 t = {
                                         description = "Daily task",
-                                        template = [=[
-* TODO %?
-  SCHEDULED: %t
-]=],
+                                        template = "* TODO %?\n  SCHEDULED: %t",
                                         target = base_dir .. "journal/%<%Y-%m-%d>.org",
                                 },
                                 r = {
