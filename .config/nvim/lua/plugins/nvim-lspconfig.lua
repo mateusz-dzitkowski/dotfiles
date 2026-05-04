@@ -37,7 +37,7 @@ return {
         })
 
         vim.lsp.config("terraformls", {
-            filetypes = { "terraform", "terraform-vars", "hcl" },
+            filetypes = { "terraform", "terraform-vars" },
         })
     end
 }
