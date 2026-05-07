@@ -103,11 +103,9 @@ client.unfocused        #313244 #1e1e2e #a6adc8 #313244
 # x config thingy
 exec_always xset s off -dpms
 # keyboard
-exec_always xset r rate 300 40
-exec_always setxkbmap -layout pl,us -option caps:escape
+exec_always $HOME/.scripts/setup_keyboard.sh
 # mouse thingy
-exec_always --no-startup-id xinput set-prop 'SteelSeries SteelSeries Rival 3' 'libinput Accel Profile Enabled' 0 1 0
-exec_always --no-startup-id xinput set-prop 'SteelSeries SteelSeries Rival 3' 'libinput Accel Speed' 0.2
+exec_always $HOME/.scripts/setup_mouse.sh
 
 # startup scripts
 exec_always --no-startup-id picom
