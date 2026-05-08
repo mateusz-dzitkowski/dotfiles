@@ -8,6 +8,17 @@ vim.keymap.del("n", "grr")
 vim.keymap.del("n", "grt")
 vim.keymap.del("n", "grx")
 
+-- open new kitty terminal window in current directory
+map("n", "<leader>st", function()
+    local dir
+    if vim.bo.filetype == "oil" then
+        dir = require("oil").get_current_dir()
+    else
+        dir = vim.fn.expand("%:p:h")
+    end
+    vim.fn.system({ "kitty", "@", "launch", "--type=window", "--cwd=" .. dir })
+end)
+
 -- make vertical movement center the cursor on screen
 map("n", "<C-d>", "<C-d>zz")
 map("n", "<C-u>", "<C-u>zz")
