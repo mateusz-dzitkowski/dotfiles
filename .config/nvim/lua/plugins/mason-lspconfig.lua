@@ -13,6 +13,7 @@ return {
             "terraformls",
             "clangd",
             "marksman",
+            "rust_analyzer",
         },
     },
 }
