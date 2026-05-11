@@ -17,7 +17,7 @@ map("n", "<leader>st", function()
         dir = vim.fn.expand("%:p:h")
     end
     vim.fn.system({ "kitty", "@", "launch", "--type=window", "--cwd=" .. dir })
-end)
+end, { desc = "Open new kitty window in cwd" })
 
 -- make vertical movement center the cursor on screen
 map("n", "<C-d>", "<C-d>zz")
@@ -28,15 +28,15 @@ map("n", "<C-o>", "<C-o>zz")
 map("n", "<C-i>", "<C-i>zz")
 
 -- tabs
-map("n", "<leader>t", ":tabe<CR>")
-map("n", "<leader>1", "1gt")
-map("n", "<leader>2", "2gt")
-map("n", "<leader>3", "3gt")
+map("n", "<leader>t", ":tabe<CR>", { desc = "Open new tab" })
+map("n", "<leader>1", "1gt", { desc = "Go to tab 1" })
+map("n", "<leader>2", "2gt", { desc = "Go to tab 2" })
+map("n", "<leader>3", "3gt", { desc = "Go to tab 3" })
 
 -- clipboard
-map({ "n", "x" }, "<leader>y", '"+y')
-map("n", "<leader>p", '"+p')
-map("n", "<leader>P", '"+P')
+map({ "n", "x" }, "<leader>y", '"+y', { desc = "Yank to clipboard" })
+map("n", "<leader>p", '"+p', { desc = "Paste down from clipboard" })
+map("n", "<leader>P", '"+P', { desc = "Paste up from clipboard" })
 
 -- set some keymaps
 local ts = require("telescope.builtin")
