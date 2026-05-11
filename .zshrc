@@ -15,7 +15,7 @@ alias lg=lazygit
 export PAGER=less
 export LESS="-iMSx4 -FX"
 export EDITOR=nvim
-export GLAMOUR_STYLE=~/.config/glow/catppuccin.json
+export GLAMOUR_STYLE="$HOME/.config/glow/catppuccin.json"
 
 # PATH PATH PATH
 export PATH="$HOME/.local/bin:$PATH"
