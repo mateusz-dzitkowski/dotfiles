@@ -24,6 +24,8 @@ export PATH="$HOME/.ghcup/bin:$PATH"
 export PATH="$HOME/.cabal/bin:$PATH"
 # GO
 export PATH="$HOME/go/bin:$PATH"
+# RUST
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # FUNCTIONS FUNCTIONS FUNCTIONS
 envsource() {
