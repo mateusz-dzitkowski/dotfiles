@@ -1,0 +1,8 @@
+curseforge
+ghcup-hs-bin
+minecraft-launcher
+neofetch
+nmtui-go
+ttf-weather-icons
+xone-dkms
+xone-dongle-firmware
