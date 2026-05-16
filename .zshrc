@@ -15,7 +15,7 @@ source "$HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source "$HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 # PROMPT PROMPT
-PROMPT='%B%F{#a6e3a1}➜%f %F{#89b4fa}%c%f '
+PROMPT='%B%F{#a6e3a1}➜%f %F{#89b4fa}%c%f%b '
 
 # LOAD BONUS ZSHRC
 [ -e "$HOME/.zshrc-bonus.zsh" ] && source "$HOME/.zshrc-bonus.zsh"
