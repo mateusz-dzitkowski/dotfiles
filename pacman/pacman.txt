@@ -50,6 +50,7 @@ neovim
 netctl
 network-manager-applet
 nftables
+nmap
 nmtui-go
 npm
 nvidia-open
