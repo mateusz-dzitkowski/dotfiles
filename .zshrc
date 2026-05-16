@@ -27,13 +27,6 @@ export PATH="$HOME/go/bin:$PATH"
 # RUST
 export PATH="$HOME/.cargo/bin:$PATH"
 
-# FUNCTIONS FUNCTIONS FUNCTIONS
-envsource() {
-    set -a
-    source "${1:-.env}"
-    set +a
-}
-
 # STINKY ZOXIDE HAS TO BE TURNED OFF AT THE END?
 eval "$(zoxide init zsh)"
 
