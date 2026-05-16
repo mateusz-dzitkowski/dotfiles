@@ -1,15 +1,30 @@
-export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="robbyrussell"
-zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+# HISTORY HISTORY
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
 HIST_STAMPS="yyyy-mm-dd"
-plugins=(zsh-autosuggestions zsh-syntax-highlighting)
+setopt HIST_IGNORE_DUPS SHARE_HISTORY
 
-source "$ZSH/oh-my-zsh.sh"
+# COMPLETION COMPLETION
+autoload -Uz compinit && compinit
+zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
+# LOAD PLUGINS LOAD PLUGINS
+source "$HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
+source "$HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+
+# PROMPT PROMPT
+PROMPT='%B%F{#a6e3a1}➜%f %F{#89b4fa}%c%f '
+
+# LOAD BONUS ZSHRC
 [ -e "$HOME/.zshrc-bonus.zsh" ] && source "$HOME/.zshrc-bonus.zsh"
 
+# ALIASES ALIASES ALIASES
 alias icat="kitten icat"
 alias ssh="kitten ssh"
 alias lg=lazygit
+alias ls="ls --color=auto"
 
 # ENV ENV ENV ENV
 export PAGER=less
