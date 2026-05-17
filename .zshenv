@@ -8,6 +8,7 @@ export MANPAGER="nvim +Man!"
 
 # STYLE STYLE STYLE STYLE
 export GLAMOUR_STYLE="$HOME/.config/glow/catppuccin.json"
+export EZA_CONFIG_DIR="$HOME/.config/eza"
 # LESS
 export LESS_TERMCAP_mb=$'\e[1;38;2;243;139;168m'               # blink → red
 export LESS_TERMCAP_md=$'\e[1;38;2;137;180;250m'               # bold → blue

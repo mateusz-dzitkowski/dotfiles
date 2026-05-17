@@ -34,7 +34,7 @@ PROMPT='%B%F{#a6e3a1}➜%f %F{#89b4fa}%c%f%b '
 alias icat="kitten icat"
 alias ssh="kitten ssh"
 alias lg=lazygit
-alias ls="eza --icons --git"
+alias ls=eza
 
 # STINKY ZOXIDE HAS TO BE TURNED OFF AT THE END?
 eval "$(zoxide init zsh)"
