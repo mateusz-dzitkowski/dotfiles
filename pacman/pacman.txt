@@ -16,6 +16,7 @@ dkms
 dunst
 efibootmgr
 ex-vi-compat
+eza
 fd
 feh
 firefox
