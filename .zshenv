@@ -3,6 +3,7 @@ export LESS="-iMSx4 -FX"
 export EDITOR=nvim
 
 # STYLE STYLE STYLE STYLE
+export GROFF_NO_SGR=1  # this makes the man pages pretty with less
 export GLAMOUR_STYLE="$HOME/.config/glow/catppuccin.json"
 # LESS
 export LESS_TERMCAP_mb=$'\e[1;38;2;243;139;168m'               # blink → red
