@@ -1,6 +1,7 @@
 export PAGER=less
 export LESS="-iMSx4 -FX"
 export EDITOR=nvim
+export VISUAL=nvim
 
 # STYLE STYLE STYLE STYLE
 export MANPAGER="nvim +Man!"
