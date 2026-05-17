@@ -1,10 +1,12 @@
+# PAGERS EDITORS VISUALS PAGERS EDITORS VISUALS
+export PSQL_PAGER='nvim -R -c "set nowrap"'
 export PAGER=less
 export LESS="-iMSx4 -FX"
 export EDITOR=nvim
 export VISUAL=nvim
+export MANPAGER="nvim +Man!"
 
 # STYLE STYLE STYLE STYLE
-export MANPAGER="nvim +Man!"
 export GLAMOUR_STYLE="$HOME/.config/glow/catppuccin.json"
 # LESS
 export LESS_TERMCAP_mb=$'\e[1;38;2;243;139;168m'               # blink → red
