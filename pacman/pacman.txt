@@ -23,6 +23,7 @@ firewalld
 fzf
 ghcup-hs-bin
 git
+git-delta
 go
 grub
 html-xml-utils
