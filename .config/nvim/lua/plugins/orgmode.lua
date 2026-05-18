@@ -31,10 +31,6 @@ return {
                                         description = "Reminder",
                                         template = "* TODO %?\n  SCHEDULED: %^t",
                                 },
-                                p = {
-                                        description = "Page",
-                                        template = "* %?\n  :PROPERTIES:\n  :ID: %^{ID}\n  :END:"
-                                },
                         },
                         ui = {
                                 menu = {
