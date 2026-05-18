@@ -9,14 +9,6 @@ export MANPAGER="nvim +Man!"
 # STYLE STYLE STYLE STYLE
 export GLAMOUR_STYLE="$HOME/.config/glow/catppuccin.json"
 export EZA_CONFIG_DIR="$HOME/.config/eza"
-# LESS
-export LESS_TERMCAP_mb=$'\e[1;38;2;243;139;168m'               # blink → red
-export LESS_TERMCAP_md=$'\e[1;38;2;137;180;250m'               # bold → blue
-export LESS_TERMCAP_me=$'\e[0m'                                # blink/bold end
-export LESS_TERMCAP_so=$'\e[1;38;2;17;17;27;48;2;249;226;175m' # standout → yellow on base
-export LESS_TERMCAP_se=$'\e[0m'                                # standound end
-export LESS_TERMCAP_us=$'\e[4;38;2;166;227;161m'               # underline → green
-export LESS_TERMCAP_ue=$'\e[0m'                                # underline end
 
 # PATH PATH PATH PATH PATH
 export PATH="$HOME/.local/bin:$PATH"
