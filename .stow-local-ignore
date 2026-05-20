@@ -3,4 +3,6 @@
 README.md
 todo.md
 pacman
+.newsboat/cache.db
+.newsboat/history.cmdline
 

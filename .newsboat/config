@@ -1,0 +1,9 @@
+include ~/.newsboat/dark
+
+bind-key j down
+bind-key k up
+bind-key J next-feed articlelist
+bind-key K prev-feed articlelist
+
+datetime-format "%Y-%m-%d"
+
