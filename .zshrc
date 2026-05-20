@@ -35,6 +35,7 @@ alias icat="kitten icat"
 alias ssh="kitten ssh"
 alias lg=lazygit
 alias ls=eza
+alias grep=rg
 
 # STINKY ZOXIDE HAS TO BE TURNED OFF AT THE END?
 eval "$(zoxide init zsh)"

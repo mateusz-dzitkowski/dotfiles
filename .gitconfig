@@ -1,7 +1,5 @@
-[user]
-    name = mateusz.dzitkowski
-
 [core]
+    pager = delta
     autocrlf = input
 
 [credential]
@@ -15,6 +13,14 @@
 
 [pull]
     rebase = true
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true
+    syntax-theme = Catppuccin Mocha
+    line-numbers = true
 
 [include]
     path = ~/.gitconfig-local

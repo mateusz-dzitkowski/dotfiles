@@ -10,6 +10,11 @@ export MANPAGER="nvim +Man!"
 export GLAMOUR_STYLE="$HOME/.config/glow/catppuccin.json"
 export EZA_CONFIG_DIR="$HOME/.config/eza"
 
+# FZF FZF FZF FZF
+export FZF_DEFAULT_COMMAND="fd --type f --hidden --exclude .git"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="fd --type d --hidden --exclude .git"
+
 # PATH PATH PATH PATH PATH
 export PATH="$HOME/.local/bin:$PATH"
 # HASKELL
