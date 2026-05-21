@@ -4,5 +4,6 @@ README.md
 todo.md
 pacman
 .newsboat/cache.db
+.newsboat/cache.db.lock
 .newsboat/history.cmdline
 
