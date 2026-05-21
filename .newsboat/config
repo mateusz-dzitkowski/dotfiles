@@ -7,5 +7,7 @@ bind-key k up
 bind-key J next-feed articlelist
 bind-key K prev-feed articlelist
 
+browser "open %u"
+
 datetime-format "%Y-%m-%d"
 
