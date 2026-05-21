@@ -1,5 +1,7 @@
 include ~/.newsboat/dark
 
+text-width 60
+
 bind-key j down
 bind-key k up
 bind-key J next-feed articlelist
