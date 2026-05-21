@@ -1,6 +1,8 @@
 include ~/.newsboat/dark
 
 text-width 60
+max-items 20
+datetime-format "%Y-%m-%d"
 
 bind-key j down
 bind-key k up
@@ -8,6 +10,4 @@ bind-key J next-feed articlelist
 bind-key K prev-feed articlelist
 
 browser "open %u"
-
-datetime-format "%Y-%m-%d"
 
