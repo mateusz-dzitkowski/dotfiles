@@ -23,13 +23,17 @@ return {
 
                         org_capture_templates = {
                                 t = {
-                                        description = "Daily task",
+                                        description = "daily Task",
                                         template = "* TODO %?\n  SCHEDULED: %t",
                                         target = base_dir .. "journal/%<%Y-%m-%d>.org",
                                 },
                                 r = {
                                         description = "Reminder",
                                         template = "* TODO %?\n  SCHEDULED: %^t",
+                                },
+                                n = {
+                                        description = "Note",
+                                        template = "* %?",
                                 },
                         },
                         ui = {
