@@ -51,6 +51,7 @@ neofetch
 neovim
 netctl
 network-manager-applet
+newsboat
 nftables
 nmap
 nmtui-go
