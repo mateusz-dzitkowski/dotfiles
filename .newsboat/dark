@@ -15,4 +15,4 @@ highlight article "^(Feed|Title|Author|Link|Date):" color2 default bold
 
 highlight article "\\((link|image|video)\\)" color8 default
 highlight article "https?://[^ ]+" color4 default
-highlight article "\[[0-9]+\]" color5 default bold
+highlight article "\\[[0-9]+\\]" color5 default bold
