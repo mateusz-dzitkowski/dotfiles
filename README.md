@@ -1,5 +1,7 @@
 # Dotfiles
 
+moved to codeberg
+
 ### Updating the dotfiles
 ```bash
 stow .
